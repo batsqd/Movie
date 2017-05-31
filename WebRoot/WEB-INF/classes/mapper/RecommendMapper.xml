@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.RecommendMapper">
+
+<insert id="saveUserFeedbackRating" parameterType="hashmap">
+update recommend set user_feedback_rating=#{user_feedback_rating} where movie_id=#{movie_id} and user_id=#{user_id}
+</insert>
+
+<insert id="saveRecommendedMovies" parameterType="hashmap">
+insert into recommend(movie_id,user_id,recommend_value)
+values(#{movie_id},#{user_id},#{recommend_value})
+</insert>
+</mapper>

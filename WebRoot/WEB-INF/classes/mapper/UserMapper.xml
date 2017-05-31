@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+<select id="selectUserByUsername" parameterType="String" resultType="com.po.User">
+     select * from user where username=#{username}
+</select>
+
+<insert id="insertUsetByUsername" parameterType="com.po.User">
+     insert into user(username,userpasswd)values(#{username},#{userpasswd});
+</insert>
+<!-- 
+#{}表示一个占位符号，#{}可以有效防止sql注入。 #{}可以接收简单类型值或pojo属性值。 
+如果parameterType传输单个简单类型值，#{}括号中可以是value或其它名称。
+
+${}表示拼接sql串，通过${}可以将parameterType 传入的内容拼接在sql中，有sql注入问题
+${}可以接收简单类型值或pojo属性值，如果parameterType传输单个简单类型值，
+${}括号中只能是value。
+-->
+
+</mapper>

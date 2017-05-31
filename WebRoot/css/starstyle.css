@@ -1,0 +1,110 @@
+ .block
+        { margin-left:200px;
+          padding :10px;
+         /* border:solid 1px #ccc;*/
+          font-family:Verdana;
+          font-size:12px;
+          width: 400px;
+          height: 30px;
+         }
+        
+
+  .block ul
+        {
+          float: left;
+          list-style: none;
+        }
+       /*CSS Star start*/
+        .star-rating
+        {
+            list-style: none;
+            margin-top: 10px;
+            padding: 0px;
+            width: 100px;
+            height: 20px;
+            position: relative;
+            background: url('/Movie/image/star_rating.gif') top left repeat-x;
+        }
+        .star-rating li
+        {
+            padding: 0px;
+            margin: 0px; 
+            float: left; 
+        }
+        .star-rating li a
+        {
+            display: block;
+            width: 20px;
+            height: 20px;
+            text-decoration: none;
+            text-indent: -9000px;
+            z-index: 20;
+            position: absolute;
+            padding: 0px;
+        }
+        .star-rating li a:hover
+        {
+            background: url('/Movie/image/star_rating.gif') left bottom;
+            z-index: 1;
+            left: 0px;
+        }
+        .star-rating a.one-star
+        {
+            left: 0px;
+        }
+        .star-rating a.one-star:hover
+        {
+            width: 20px;
+        }
+        .star-rating a.two-stars
+        {
+            left: 20px;
+        }
+        .star-rating a.two-stars:hover
+        {
+            width: 40px;
+        }
+        .star-rating a.three-stars:hover
+        {
+            width: 60px;
+        }
+        .star-rating a.three-stars
+        {
+            left: 40px;
+        }
+        .star-rating a.four-stars
+        {
+            left: 60px;
+        }
+        .star-rating a.four-stars:hover
+        {
+            width: 80px;
+        }
+        .star-rating a.five-stars
+        {
+            left: 80px;
+        }
+        .star-rating a.five-stars:hover
+        {
+            width: 100px;
+            
+        }
+        /*CSS Star end*/
+        .jsstar
+        {   list-style: none;
+            margin: 0px;
+            padding: 0px;
+            width: 100px;
+            height: 20px;
+            position: relative;
+            
+            }
+         .jsstar li  
+         {
+            padding:0px;
+            margin: 0px; 
+            float: left; 
+            width:20px;
+            height:20px;
+            background:url('/Movie/image/star_rating.gif') 0 0 no-repeat;
+            }  

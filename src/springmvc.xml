@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+		<!-- 配置Handler -->
+		 <bean
+		      class="com.controller.MovieController"/>
+		 <bean
+		      class="com.controller.LoginController"/>
+		 <bean
+		      class="com.controller.FrameController"/>
+		 <bean
+		      class="com.controller.FenyeController"/>   
+		 <bean
+		      class="com.controller.StarRating"/> 
+		 <bean
+		      class="com.controller.SearchMovieController"/>
+		<!-- 配置适配器 -->
+		<!--  
+		<bean
+		     class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+		--> 
+		<!-- 配置映射器 -->
+		 <!--  
+		 <bean 
+		      class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+		   -->
+		<!-- <mvc:annotation-driven></mvc:annotation-driven> 可以代替注解映射器和适配器-->
+		
+		<mvc:annotation-driven></mvc:annotation-driven> 
+		
+		<!-- 配置视图解析器 -->
+        <bean
+	        class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
+	    <!-- 配置拦截器 -->    
+		<mvc:interceptors>
+		    <!--记录登录成功的用户 -->
+			<mvc:interceptor>
+				<mvc:mapping path="/showHome.action"/>
+				<bean class="com.interceptor.InterceptorLogin"></bean>
+			</mvc:interceptor>
+	    </mvc:interceptors>
+	      
+	    <mvc:interceptors>
+		    <mvc:interceptor>
+				<mvc:mapping path="/*"/>
+				<bean class="com.interceptor.InterceptorValidateIsLogin"></bean>
+			</mvc:interceptor>
+	    </mvc:interceptors>
+         
+                
+</beans>

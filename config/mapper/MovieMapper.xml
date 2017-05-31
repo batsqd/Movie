@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.MovieMapper">
+<select id="selectMovieById" parameterType="int" resultType="com.po.Movie">
+     select * from movie where movie_id=#{movie_id}
+</select>
+
+<select id="selectMoviesByGenres"  parameterType="java.lang.String"  resultType="com.po.Movie">
+	<!--基本数据类型#{} 占位符内的参数任意-->
+		select * from movie where movie_genres like #{movie_genres}
+</select>
+
+<select id="selectMoviesByGenresAndLimit" parameterType="hashmap" resultType="com.po.Movie">
+      select * from movie where movie_genres like #{movie_genres} limit #{begain},#{end}
+</select>
+
+<select id="selectCountMoviesByGenres"  parameterType="java.lang.String"  resultType="int">
+	<!--基本数据类型#{} 占位符内的参数任意-->
+		select count(*) from movie where movie_genres like #{movie_genres}
+</select>
+
+<select id="selectMoviesByReleaseTimeLimit" parameterType="hashmap" resultType="com.po.Movie">
+<!--movie_genres = #{movie_genres}这里使用==并不恰当，因为一个电影可能同时属于多个流派  -->
+        select * from movie where movie_genres like #{movie_genres} order by movie_release_date desc limit #{begain},#{end}
+</select>
+
+<select id="selectMoviesByRatingLimit" parameterType="hashmap" resultType="com.po.Movie">
+        select * from movie where movie_genres like #{movie_genres} order by movie_average_score desc limit #{begain},#{end}
+</select>
+
+<select id="selectMoviesBySearchKeyWordLimit" parameterType="hashmap" resultType="com.po.Movie">
+        select * from movie where movie_name like #{keyWord}  limit #{begain},#{end}
+</select>
+
+<select id="selectCountMoviesByKeyWord" parameterType="java.lang.String" resultType="int">
+        select count(*) from movie where movie_name like #{movie_name}
+</select>
+<!-- 下面的可以删除了，数据库中的movie_is_hot也是不必要的-->
+<select id="selectHotMovies" parameterType="int" resultType="com.po.Movie">
+        select * from movie where movie_is_hot=true  limit #{nums}
+</select>
+</mapper>

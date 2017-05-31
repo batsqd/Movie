@@ -1,0 +1,20 @@
+#search_box { 
+width: 201px; 
+height: 31px; 
+background: url(/Movie/image/searchBox/bg_search_box.gif); 
+margin-top: 10px;
+margin-left: 30px;
+} 
+#search_box #s { 
+float: left; 
+padding: 0; 
+margin: 6px 0 0 6px; 
+border: 0; 
+width: 159px; 
+background: none; 
+font-size: .8em; 
+} 
+#search_box #go { 
+float: right; 
+margin: 3px 4px 0 0; 
+}

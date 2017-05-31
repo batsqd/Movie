@@ -1,0 +1,32 @@
+body{
+ margin: 0 auto;
+ width: 730px;
+ height: 700px;
+ /*border: 1px solid blue;*/
+ font-size: 12px;
+
+}
+
+.div1{
+ width: 730px;
+ height: 700px;
+ /*border: 1px solid gray;*/
+ text-align: center;
+}
+
+.div1 img{
+  margin-top:20px;
+  width: 250px;
+  height: 300px;
+  padding-bottom: 2px;
+}
+
+.div1 li{
+ 
+ width: 700px
+ height: 30px;
+ margin-left: 6px;
+/* float: left;*/
+/* background-color: pink;*/
+}
+

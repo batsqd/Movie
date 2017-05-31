@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.WatchMovieMapper">
+
+<insert id="saveRating" parameterType="hashmap">
+insert into watchmovie(userid,movie_id,rating,comment,rating_time)
+values(#{userid},#{movie_id},#{rating},#{comment},#{rating_time})
+</insert>
+
+<select id="numsOfRatedMoviesByUserId" parameterType="int" resultType="int">
+ select count(*) from watchmovie where userid=#{userid}
+</select>
+
+<select id="selectHotMovies" parameterType="hashmap" resultType="int">
+select movie_id, count(*) as nums from watchmovie where rating_time=#{rating_time} group by movie_id order by nums desc limit #{hot_movie_nums};
+</select>
+</mapper>

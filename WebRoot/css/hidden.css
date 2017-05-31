@@ -1,0 +1,13 @@
+.li1 {
+list-style:none;
+ width:350px;
+ white-space:nowrap;
+ text-overflow:ellipsis; 
+ -o-text-overflow:ellipsis; 
+ overflow: hidden;
+margin-top:5px; }
+ 
+.li2{
+list-style:none;
+margin-top:5px;
+}

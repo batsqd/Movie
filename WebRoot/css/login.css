@@ -1,0 +1,95 @@
+@charset "utf-8";
+html{color:#333; background:#f9f8f3; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-rendering:optimizelegibility; -moz-osx-font-smoothing: grayscale;}
+html.borderbox *, html.borderbox *:before, html.borderbox *:after{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header,.topmenu, nav, section{margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header,.topmenu, nav, section{display:block;}
+audio, canvas, video{display:inline-block; *display:inline; *zoom:1;}
+body, button, input, select, textarea{font:400 1em/1.8 Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;}
+button, input{*width:auto; *overflow:visible; /* 让 input 和 button 一样高 */ line-height:normal;}
+button::-moz-focus-inner,
+input::-moz-focus-inner{padding:0; border:0;}
+table{border-collapse:collapse; border-spacing:0;}
+th{text-align:inherit;}
+fieldset, img{border:0;}
+img{-ms-interpolation-mode:bicubic;}
+iframe{display:block;}
+blockquote{position:relative; color: #999; font-weight:300; font-family:Avenir, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif; border-left:1px solid #1abc9c; padding-left:1em; margin:1em 3em 1em 2em;}
+@media only screen and ( max-width:640px ){blockquote{margin:1em 0;}}
+acronym, abbr{border-bottom:1px dotted; font-variant:normal;}
+abbr{cursor:help;}
+del{text-decoration:line-through;}
+address, caption, cite, code, dfn, em, th, var{font-style:normal; font-weight:400;}
+ul, ol{list-style:none;}
+caption, th{text-align:left;}
+q:before, q:after{content:'';}
+sub, sup{font-size:75%; line-height:0; position:relative;}
+:root sub, :root sup{vertical-align:baseline;}
+button, input[type="reset"], input[type="button"], input[type="submit"] {line-height:normal !important;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+a{color:#999;}
+ins, a{text-decoration:none;}
+mark{background:#fffdd1; border-bottom:1px solid #ffedce; padding:2px;margin:0 5px;}
+pre, code{font-family:Courier, 'Courier New', monospace; white-space:pre-wrap; word-wrap:break-word;}
+pre{background:#f8f8f8; border:1px solid #ddd; padding:1em 1.5em;}
+hr{border:none; border-bottom:1px solid #cfcfcf; margin-bottom:10px; *color:pink; *filter:chroma(color=pink); height:10px; *margin:-7px 0 2px;}
+small, .typo-small,
+figcaption{font-size:0.9em; color:#888;}
+strong, b{font-weight:inherit;color:#000；}
+[draggable]{cursor:move;}
+.clearfix:before, .clearfix:after{content:""; display:table;}
+.clearfix:after{clear:both}
+.clearfix{zoom:1;clear: both;font-size:0;}
+.textwrap, .textwrap td, .textwrap th{word-wrap:break-word; word-break:break-all;}
+.textwrap-table{table-layout:fixed;}
+.serif{font-family:Palatino, Optima, Georgia, serif;}
+h1, h2, h3, h4, h5, h6{font-family:'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif; font-weight:200; color:#000;}
+
+li{list-style:none;}
+img{max-width:100%;}
+:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+*, *:after, *:before{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+
+header{width:1000px;margin:0 auto;}
+.loginform{position:relative;width:1000px;margin:0 auto;height:450px;top:0;}
+.loginbox{width:320px;height:410px;position:absolute;right:0;top:50px;background:#fff;padding:20px;border-radius:4px;}
+.loginform input[type="text"],.loginform input[type="password"],.loginform input[type="button"],.loginform input[type="submit"]{width:100%;border:1px solid #ddd;padding:10px 4px 10px 40px;line-height:normal;font-size:14px;border-radius:2px;outline:none;margin-bottom:20px;}
+.loginform input[name="username"]{background:url(../img/userimg.png) no-repeat 10px center;}
+.loginform input[type="password"]{background:url(../img/keys.png) no-repeat 10px center;}
+.loginform input[name="verificationCode"]{background:url(../img/chilun.png) no-repeat 10px center;}
+.loginform input:focus{border:1px solid #ff8500;}
+.loginform input[type="password"]:focus{background:url(../img/keys-h.png) no-repeat 10px center;}
+.loginform input[name="username"]:focus{background:url(../img/userimg-h.png) no-repeat 10px center;}
+.loginform input[name="verificationCode"]:focus{background:url(../img/chilun2.png) no-repeat 10px center;}
+input#login-button{background:#27C148;border:none;color:#fff;cursor:pointer;font-size:16px;transition: all 0.3s;
+-moz-transition: all 0.3s;
+-webkit-transition: all 0.3s;
+-o-transition: all 0.3s;padding:10px 0px 10px 0px;}
+input#login-button:hover{background-color:#27C148;}
+.keeplogin{font-size:12px;margin-bottom:20px;}
+.logintitle{text-align:center;margin:10px 0 30px 0;color:#595959;font-size:20px;}
+.loginlogo{background:url(../img/logos.png) no-repeat left center;width:240px;height:60px;font-size:0;margin-top:20px;}
+footer{text-align:center;font-size:12px;color:#c2c2c2;position:absolute;bottom:-90px;width:100%;}
+.ewm{width:90px;text-align: center;font-size:12px;display: block;padding:10px;background:#fff;position: absolute;left:40px;bottom:40px;}
+.ewm img{max-width:100%;}
+.ewm span{display: block;text-align:center;}
+label{color:#999;}
+.bgcont{height:450px;width:660px;position: relative;}
+.newyear{background: url(../img/cbg2.png) no-repeat center;}
+ @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
+.loginform input[type="text"]{background:url(../img/userimg@2x.png) no-repeat 10px center;background-size:20px;}
+.loginform input[type="password"]{background:url(../img/keys@2x.png) no-repeat 10px center;background-size:20px;}
+.loginform input[type="password"]:focus{background:url(../img/keys-h@2x.png) no-repeat 10px center;background-size:20px;}
+.loginform input[type="text"]:focus{background:url(../img/userimg-h@2x.png) no-repeat 10px center;background-size:20px;}
+.loginlogo{background:url(../img/logos@2x.png) no-repeat left center;width:240px;height:60px;background-size:150px;}
+.newyear{background: url(../img/cbg2.png) no-repeat center;background-size:385px;}
+}
+
+.errors{font-size: 12px;color: red;}
+
+
+
+html {
+    background: #f4f4f4;
+}
