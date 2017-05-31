@@ -13,7 +13,7 @@ public class RedisUtils {
     private static int PORT = 6379;
     
     //访问密码,若你的redis服务器没有设置密码，就不需要用密码去连接
-    private static String AUTH = "u&batsqd";
+    private static String AUTH = "#####";
     
     //可用连接实例的最大数目，默认值为8；
     private static int MAX_TOTAL = 512;
