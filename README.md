@@ -1,8 +1,6 @@
 # Movie
 Personalized real-time movie recommendation system
 
-My New Resume :  http://121.42.174.147:8080/myresume/newResume.html
-
 Technical implementation details ： http://121.42.174.147:8080/myresume/paper.html
 
 About personalized movie recommendation site MovieWatch //website http://121.42.174.147:8080/Movie/login.action
