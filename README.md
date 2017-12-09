@@ -1,9 +1,5 @@
 # Movie
-Personalized real-time movie recommendation system
-
-Technical implementation details ： http://121.42.174.147:8080/myresume/paper.html
-
-About personalized movie recommendation site MovieWatch //website http://121.42.174.147:8080/Movie/login.action
+personalized movie recommendation site MovieWatch //website http://121.42.174.147:8080/Movie/login.action
 
 1 User Registration & Login
 
