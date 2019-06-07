@@ -14,4 +14,5 @@ After successful login, user can search for a particular movie and rate the movi
 
 After successful login, user can search for a particular movie and rate the movie. User can also see the recommended movies based the ratings already given by their own and other user. Recommender systems are aimed to serve many users, sometimes millions of users at a time. Also the number of items to be recommended can be very high. A really useful recommender system, should have a fast and real time processing capabilities. MovieWatch provide users with viewing services and recommend movies that user might like. After entering the home page, the user can select the movie to watch and then rate the movie range from 1 to 5 star. after rating 5 movies, the user can click ‘You Taste’ to view the movies system recommended.
 
-It should be noted that personalized recommendation movie site MovieWatch can only be better suited to Google and Firefox browser.![图片](http://b364.photo.store.qq.com/psb?/V13n5inQ1uo8xv/q*d7G9j6lmj*gStL9B0KKDHEaJNMv7szpMBp9rGDWTo!/c/dGwBAAAAAAAA&bo=DAIYAgAAAAAREDM!)
+It should be noted that personalized recommendation movie site MovieWatch can only be better suited to Google and Firefox browser.
+![图片](http://b364.photo.store.qq.com/psb?/V13n5inQ1uo8xv/q*d7G9j6lmj*gStL9B0KKDHEaJNMv7szpMBp9rGDWTo!/c/dGwBAAAAAAAA&bo=DAIYAgAAAAAREDM!)
